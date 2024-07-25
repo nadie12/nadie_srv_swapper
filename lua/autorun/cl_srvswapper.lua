@@ -5,10 +5,12 @@
 
     Made by Nadie (v1.1) Git incorporated
 
+    Garry's Mod Github integration by Phatso on Discord 😁
+    https://github.com/CFC-Servers/wisp_addon_manager       
+
 --]]
+ 
 
-
--- CHANGE 
 --  Derma Blur Method
 
 local blur = Material("pp/blurscreen")
