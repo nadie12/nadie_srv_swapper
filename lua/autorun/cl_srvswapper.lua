@@ -12,7 +12,7 @@
  
 
  
---  Derma Blur Methodt
+--  Derma Blur Methodthe
 
 local blur = Material("pp/blurscreen")
 local function DrawBlur(panel, amount)
