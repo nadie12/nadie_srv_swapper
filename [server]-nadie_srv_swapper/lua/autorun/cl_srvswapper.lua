@@ -3,11 +3,10 @@
     IMPLEMENTS A UI TO EASILY SWAP BETWEEN THE MAIN AND EVENT SERVER.
     CONTEXT MENU POPUP
 
-    Made by Nadie (v1.0)
+    Made by Nadie (v1.1) Git incorporated
 
 --]]
 
---
 
 --  Derma Blur Method
 
