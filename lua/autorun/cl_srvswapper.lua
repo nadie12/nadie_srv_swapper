@@ -48,6 +48,12 @@ local EVENT_SERVER_IP = "45.62.160.68:27068"
 
 local NSS_PANEL
 
+SERVER_SWAPPERS = SERVER_SWAPPERS or {}
+
+local function ServerSwapped(targetServer)
+    SERVER_SWAPPERS[LocalPlayer():SteamID64()] = targetServer
+end
+
 function NSS_Open()
     local w, h = ScrW(), ScrH()
 
@@ -125,6 +131,7 @@ function NSS_Open()
                 end)
             else
                 RunConsoleCommand("connect", MAIN_SERVER_IP)
+                ServerSwapped("Main")
             end
         end
     end
@@ -140,6 +147,7 @@ function NSS_Open()
                 end)
             else
                 RunConsoleCommand("connect", EVENT_SERVER_IP)
+                ServerSwapped("Event")
             end
         end
     end
